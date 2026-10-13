@@ -68,6 +68,12 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               alt="Planta baixa arquitetônica 3D de casa residencial moderna"
               src={ASSETS.heroFloorPlan}
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (!target.src.includes('aida-public')) {
+                  target.src = ASSETS.heroHouse;
+                }
+              }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0a2540]/90 via-[#0a2540]/30 to-transparent flex items-end justify-between p-4">
               <div className="flex items-center gap-1.5 text-white">
@@ -335,6 +341,12 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
               className="w-full h-full object-cover"
               alt="Casa Residencial Alphaville"
               src={ASSETS.obraAlphaville}
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (!target.src.includes('aida-public')) {
+                  target.src = ASSETS.heroHouse;
+                }
+              }}
             />
             <div className="absolute top-2 left-2 px-2.5 py-1 rounded-md bg-[#000f22]/85 backdrop-blur-sm text-white text-[11px] flex items-center gap-1 font-semibold">
               <span className="material-symbols-outlined text-[16px]">villa</span>

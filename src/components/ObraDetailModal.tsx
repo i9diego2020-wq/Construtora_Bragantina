@@ -27,6 +27,12 @@ export const ObraDetailModal: React.FC<ObraDetailModalProps> = ({
             src={obra.imageUrl}
             alt={obra.title}
             className="w-full h-full object-cover"
+            onError={(e) => {
+              const target = e.currentTarget;
+              if (!target.src.includes('aida-public')) {
+                target.src = 'https://lh3.googleusercontent.com/aida-public/AB6AXuAzmKx00ceWVKnZyacNdfzv5NQz6Kq_Bp28FkMfh6B8LOPUfPBcr-s1tLvq6rrXcCynrhd6KgFgvX_UBF1O1wTsgaI-xGYy0Ae9xaFi_tUu7aqwl6v6MVRs8e4c-K81gZV9qnpe7ht7m5R0j3otB46R3hCSMZtM8avutY7owvSHY6rx_DBprhUVwf4v6t8ZqIvm1toxRIzwwFYtcVOb_2fo842Il35pm-AOY83LVgPP9y4ij-oPu2weYw';
+              }
+            }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-between p-4">
             <div className="flex justify-between items-start">

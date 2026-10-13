@@ -1,11 +1,13 @@
 import { ObraItem, ServicoItem, DifferentialItem } from '../types';
+import heroFloorPlanImg from '../assets/images/realistic_floor_plan_1791891738744.jpg';
+import obraAlphavilleImg from '../assets/images/casa_residencial_obra_1791895076144.jpg';
 
 export const ASSETS = {
   logo: 'https://lh3.googleusercontent.com/aida/AEtjO1VFUGBx_zaMUWEdHJV4U9YuTvXuONS-qN0x8N7fpc5bSruQECwdMDJc8UNC8nWEVRCzQ4OpXiB9vhezo_XWQi627D3CPu1Qig8H8kTPTl7NWqDAcsNoJa4hXQSTSHgZ25VyQdziof8aSf2BmM1xu6T27MTSGGlP3Ksykt-PJEJFPO9Y2Uo72AmvQ4zNmio3HQoJ-Q7xEHSL70J-QZAl4ioQvb0loGFkWJtqVzDXZJbyC8vQ9QyuDYljpv2X',
   carlosAvatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBewQKJvgQOJ1SvuJHZscQb9iBiXJwOXw8EzKrIqBOjUX3mVf9f-OGDJiIaeqakt84hmtIfc6oAJ9xS_INWIBzkeKo5Wp5fj0TShB1-vYypcoGnohhrbpO4Lb2AUDVKdx879_8lzcDaltP8LGWzLhfV9KydSiYa82JGIgza1wwY5rbyO8if2HjANzSk1ooYRPB-A8LTOACQR7kb54tN2SRXICbwFJ6mwERAIKCFxAFK-RkZIlvutNCYKQ',
   heroHouse: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAzmKx00ceWVKnZyacNdfzv5NQz6Kq_Bp28FkMfh6B8LOPUfPBcr-s1tLvq6rrXcCynrhd6KgFgvX_UBF1O1wTsgaI-xGYy0Ae9xaFi_tUu7aqwl6v6MVRs8e4c-K81gZV9qnpe7ht7m5R0j3otB46R3hCSMZtM8avutY7owvSHY6rx_DBprhUVwf4v6t8ZqIvm1toxRIzwwFYtcVOb_2fo842Il35pm-AOY83LVgPP9y4ij-oPu2weYw',
-  heroFloorPlan: '/src/assets/images/realistic_floor_plan_1791891738744.jpg',
-  obraAlphaville: '/src/assets/images/casa_residencial_obra_1791895076144.jpg',
+  heroFloorPlan: heroFloorPlanImg,
+  obraAlphaville: obraAlphavilleImg,
   obraJardins: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAKhvM7X6K6rhs5qSDWcTmopKF37GMAPV75HDD_1ohyNn_MUUPnh7KrdbWz1pu-Nql9vZFkWRxXNK8I23xylp0-0aBtYpDMwxOZwXkKnuhwnF15VkOg9Ea8di3ZPFEX9Z1bvMWDv11-F4D3-cWuGigy3hi2e7rw67O9vaB0lHckJk2sJfdMkPnJBkB8gsw0YDdCau6BnE_YGthnFvmXI8Dh8qo_dGX3EXkHPNTDLunjvJl4Edm6IogsUg',
   testimonialAvatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuClEtiBVTrm5KafjVDW-Gt9ACzlCQZh3TGRpLV_eUQca2hbfqCZEFaX-8zKnZjadLTVApgsYJ3GTZmsF_1-AGbf-PJ9Dx8qPiDl6AOP33Qpokn7r9hlYrRyVnLTxv7fQ931SfsIAJJ8pOz_SrJ8ssx0xvUCadvAZD4ck41cdjYPpHIGho2lNeA15u6b1Tdk6i__sciPu20wG7xphCejJk88090WhtDrJ2M5TEvC2ACSgq9EiPdjeAIB0w',
 };

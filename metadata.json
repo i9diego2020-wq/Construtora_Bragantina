@@ -1,0 +1,6 @@
+{
+  "name": "Vieira Construtora - Construção & Reformas de Alto Padrão",
+  "description": "Construção de casas do zero e reformas de alto padrão em São Paulo e região. Preço fechado, ART CREA, garantia de 5 anos e acompanhamento de obras em tempo real.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

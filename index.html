@@ -11,6 +11,35 @@
       gtag('config', 'AW-18455362418');
     </script>
 
+    <!-- Event snippet for Visualização de página conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-18455362418/NCkTCLSDmvocEPL2meBE',
+            'value': 1.0,
+            'currency': 'BRL',
+            'event_callback': callback
+        });
+        return false;
+      }
+
+      // Dispara automaticamente conversão quando o usuário clica em links de WhatsApp
+      document.addEventListener('click', function(e) {
+        var el = e.target && e.target.closest ? e.target.closest('a') : null;
+        if (el && el.href && (el.href.indexOf('wa.me') !== -1 || el.href.indexOf('whatsapp') !== -1)) {
+          if (typeof gtag_report_conversion === 'function') {
+            gtag_report_conversion();
+          }
+        }
+      });
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>Construtora Bragantina | Construção de Casas do Zero e Reformas em Bragança Paulista e Região</title>
